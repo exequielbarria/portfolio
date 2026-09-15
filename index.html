@@ -54,9 +54,9 @@
 
   .projects-gallery { display: none; gap: 12px; overflow-x: auto; padding-bottom: 6px; }
   .projects-gallery.open { display: flex; }
-  .proj-card { flex-shrink: 0; width: 160px; border: 1px solid #eee; border-radius: 10px; overflow: hidden; cursor: default; transition: box-shadow 0.15s; }
+  .proj-card { flex-shrink: 0; width: 160px; border: 1px solid #eee; border-radius: 10px; overflow: hidden; cursor: default; transition: box-shadow 0.25s ease, transform 0.25s ease; }
   .proj-card:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
-  .proj-thumb { height: 100px; display: flex; align-items: center; justify-content: center; font-size: 2rem; }
+  .proj-thumb { height: 100px; display: flex; align-items: center; justify-content: center; font-size: 2rem; transition: filter 0.25s ease; }
   .proj-thumb.t1 { background: linear-gradient(135deg, #e8f4fd, #bde0f7); }
   .proj-thumb.t2 { background: linear-gradient(135deg, #fef3e2, #fdd99b); }
   .proj-thumb.t3 { background: linear-gradient(135deg, #e8fdf0, #a8e6c0); }
@@ -64,7 +64,7 @@
   .proj-thumb.t5 { background: linear-gradient(135deg, #ebe8fd, #b8a8f0); }
   a.proj-card { text-decoration: none; color: inherit; cursor: pointer; position: relative; }
   a.proj-card::after { content: "↗"; position: absolute; top: 8px; right: 10px; font-size: 0.85rem; color: #fff; background: rgba(0,0,0,0.25); width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
-  a.proj-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
+  .proj-card:hover { transform: scale(1.07); box-shadow: 0 16px 32px rgba(0,0,0,0.35), 0 6px 12px rgba(0,0,0,0.25); z-index: 5; position: relative; }
   .proj-body { padding: 10px 12px; }
   .proj-title { font-size: 0.78rem; font-weight: 700; margin-bottom: 4px; line-height: 1.3; }
   .proj-desc { font-size: 0.72rem; color: #888; line-height: 1.4; margin-bottom: 8px; }
@@ -251,7 +251,7 @@
           <div class="proj-body">
             <div class="proj-title">Control de Stock — Rectificaciones Barria</div>
             <div class="proj-desc">De la factura al stock, sin carga manual</div>
-            <div class="proj-tags"><span class="proj-tag tag-purple">Power Automate</span><span class="proj-tag tag-purple">AI Builder</span></div>
+            <div class="proj-tags"><span class="proj-tag tag-purple">Power Automate</span><span class="proj-tag tag-purple">AI Builder</span><span class="proj-tag tag-purple">Office Scripts</span><span class="proj-tag tag-purple">Excel Online</span><span class="proj-tag tag-purple">OneDrive</span></div>
           </div>
         </a>
         <a class="proj-card" href="javascript:void(0)" onclick="showProject('tableros-rdc')">
@@ -259,7 +259,7 @@
           <div class="proj-body">
             <div class="proj-title">Dashboards Power BI</div>
             <div class="proj-desc">5 tableros ST, OT, Backlog, MDO — Refinería del Centro</div>
-            <div class="proj-tags"><span class="proj-tag tag-blue">Power BI</span><span class="proj-tag tag-blue">SAP MDG</span></div>
+            <div class="proj-tags"><span class="proj-tag tag-blue">Power BI</span><span class="proj-tag tag-blue">Qlik</span></div>
           </div>
         </a>
         <div class="proj-card">
@@ -275,7 +275,7 @@
           <div class="proj-body">
             <div class="proj-title">Automatización MRP</div>
             <div class="proj-desc">Flujo de aprobaciones con Power Automate y Teams</div>
-            <div class="proj-tags"><span class="proj-tag tag-green">Power Automate</span><span class="proj-tag tag-green">Teams</span></div>
+            <div class="proj-tags"><span class="proj-tag tag-green">Power Automate</span><span class="proj-tag tag-green">Approvals</span><span class="proj-tag tag-green">Teams</span><span class="proj-tag tag-green">SAP PM</span></div>
           </div>
         </div>
         <div class="proj-card">
